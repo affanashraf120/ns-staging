@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  # In Docker
+  # - TEST_POSTGRES_URI=postgres://prisma:prisma@postgres/
+  # Outside Docker
+  # - TEST_POSTGRES_URI=postgres://prisma:prisma@localhost:5432/
+
+  mysql:
+    image: mysql:latest
+    restart: always
+    environment:
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+    volumes:
+      - mysql:/var/lib/mysql
+    ports:
+      - '${MYSQL_PORT}:3306'
+
+volumes:
+  mysql:

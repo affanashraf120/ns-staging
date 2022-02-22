@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-1.1.x", "darwin"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Job {
+  id          String  @unique(map: "Unique_Cons") @db.VarChar(500)
+  jobTitle   String  @db.Text  @map("Job_Title")
+  link        String? @db.Text  @map("Link")
+  address     String? @db.Text  @map("Address")
+  datePosted  String? @db.Text  @map("Date_Posted")
+  urgentHire String? @db.Text  @map("Urgent_Hire")
+  salary      String? @db.Text  @map("Salary")
+  company     String? @db.Text  @map("Company")
+  jobType    String? @db.Text  @map("Job_Type")
+  directLink String? @db.Text  @map("Direct_Link")
+  hotJob     String? @default("no") @db.VarChar(5) @map("hot_job")
+  state       String? @db.VarChar(255)
+
+  @@map("jobs")
+}

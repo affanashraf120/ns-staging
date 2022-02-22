@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Full Time",
+        "slug": "full-time"
+    },
+    {
+        "name": "Part Time",
+        "slug": "part-time"
+    },
+    {
+        "name": "Contract / Casual",
+        "slug": "contract"
+    },
+    {
+        "name": "Apprenticeship / Traineeship",
+        "slug": "traineeship"
+    },
+    {
+        "name": "Graduate",
+        "slug": "graduate"
+    },
+    {
+        "name": "Flexibility available / remote",
+        "slug": "remote"
+    }
+]

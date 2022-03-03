@@ -21,6 +21,7 @@ export async function getStaticProps() {
 }
 
 const Page = (props: HomePageProps) => {
+	console.log(props)
 	return (
 		<>
 			<Jobs jobs={props.jobs} count={props.count} />

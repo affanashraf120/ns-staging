@@ -6,22 +6,23 @@ export async function getStaticProps() {
 			method: 'GET',
 		})
 		const foo = await result.json()
-		return { props: {
-			count:0,
-			jobs:[],
-			data: JSON.stringify((foo))
-		} }
+		return {
+			props: {
+				...foo
+			}
+		}
 	} catch (e) {
 		console.log(e)
-		return { props: {
-			count:0,
-			jobs:[]
-		} }
+		return {
+			props: {
+				count: 0,
+				jobs: []
+			}
+		}
 	}
 }
 
-const Page = (props: any) => {
-	console.log(JSON.parse(props?.data))
+const Page = (props: HomePageProps) => {
 	return (
 		<>
 			<Jobs jobs={props.jobs} count={props.count} />

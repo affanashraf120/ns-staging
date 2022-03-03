@@ -1,13 +1,12 @@
-type JobType = {
+type Job = {
   id: string;
-  jobTitle: string;
-  location: string;
-  company: string;
-  datePosted: string;
-  jobType: string;
-  hotJob: string;
+  job_title: string;
   address: string;
-  link?: string;
+  company: string;
+  date_posted: string;
+  job_type: string;
+  hot_job: boolean;
+  apply_link: string;
 };
 
 type FilterUpdates = {
@@ -21,7 +20,9 @@ type SearchModalProps = {
 };
 
 type HomePageProps = {
-  jobList: [JobType];
-  total: number;
-  conditions: string;
+  // jobList: [JobType];
+  // total: number;
+  // conditions: string;
+  jobs:Job[],
+  count:number,
 };

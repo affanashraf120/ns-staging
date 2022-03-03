@@ -23,8 +23,8 @@ const Page = () => {
                                 <div className="relative flex flex-col overflow-hidden bg-white shadow-md group rounded-2xl">
 
                                     <div className="flex flex-col flex-1 p-6 sm:p-8">
-                                        <p className="flex-1 text-xl font-bold text-gray-900 font-pj">How to write content about your photographs</p>
-                                        <p className="text-sm font-normal text-gray-600 mt-9 md:mt-16 font-pj lg:mt-9 xl:mt-16">August 15, 2021</p>
+                                        <p className="flex-1 text-xl font-bold text-gray-900 font-pj">Registered Nurse</p>
+                                        <p className="text-sm font-normal text-gray-600 mt-9 md:mt-16 font-pj lg:mt-9 xl:mt-16">2022 - Job Description1</p>
                                         <a href="#" title="">
                                             <span className="absolute inset-0" aria-hidden="true"></span>
                                         </a>
@@ -35,8 +35,8 @@ const Page = () => {
                             <div className="relative flex flex-col overflow-hidden bg-white shadow-md group rounded-2xl">
 
                                 <div className="flex flex-col flex-1 p-6 sm:p-8">
-                                    <p className="flex-1 text-xl font-bold text-gray-900 font-pj">How to choose the right colors when creating a website?</p>
-                                    <p className="text-sm font-normal text-gray-600 font-pj mt-9">March 21, 2021</p>
+                                    <p className="flex-1 text-xl font-bold text-gray-900 font-pj">Enroolled Nurse</p>
+                                    <p className="text-sm font-normal text-gray-600 font-pj mt-9">2022 - Job Description</p>
                                     <a href="#" title="">
                                         <span className="absolute inset-0" aria-hidden="true"></span>
                                     </a>
@@ -46,8 +46,8 @@ const Page = () => {
                             <div className="relative flex flex-col overflow-hidden bg-white shadow-md group rounded-2xl">
 
                                 <div className="flex flex-col flex-1 p-6 sm:p-8">
-                                    <p className="flex-1 text-xl font-bold text-gray-900 font-pj">How to choose the right colors when creating a website?</p>
-                                    <p className="text-sm font-normal text-gray-600 font-pj mt-9">March 21, 2021</p>
+                                    <p className="flex-1 text-xl font-bold text-gray-900 font-pj">Assitant in Nursing</p>
+                                    <p className="text-sm font-normal text-gray-600 font-pj mt-9">2022 - Job Description</p>
                                     <a href="#" title="">
                                         <span className="absolute inset-0" aria-hidden="true"></span>
                                     </a>
@@ -58,8 +58,8 @@ const Page = () => {
                             <div className="relative flex flex-col overflow-hidden bg-white shadow-md group rounded-2xl">
 
                                 <div className="flex flex-col flex-1 p-6 sm:p-8">
-                                    <p className="flex-1 text-xl font-bold text-gray-900 font-pj">How to choose the right colors when creating a website?</p>
-                                    <p className="text-sm font-normal text-gray-600 font-pj mt-9">March 21, 2021</p>
+                                    <p className="flex-1 text-xl font-bold text-gray-900 font-pj">Clinical Nurse Specialist?</p>
+                                    <p className="text-sm font-normal text-gray-600 font-pj mt-9">2022 - Job Description</p>
                                     <a href="#" title="">
                                         <span className="absolute inset-0" aria-hidden="true"></span>
                                     </a>
@@ -69,8 +69,8 @@ const Page = () => {
                             <div className="relative flex flex-col overflow-hidden bg-white shadow-md group rounded-2xl">
 
                                 <div className="flex flex-col flex-1 p-6 sm:p-8">
-                                    <p className="flex-1 text-xl font-bold text-gray-900 font-pj">How to choose the right colors when creating a website?</p>
-                                    <p className="text-sm font-normal text-gray-600 font-pj mt-9">March 21, 2021</p>
+                                    <p className="flex-1 text-xl font-bold text-gray-900 font-pj">Nurse Manager</p>
+                                    <p className="text-sm font-normal text-gray-600 font-pj mt-9">2022 - Job Description</p>
                                     <a href="#" title="">
                                         <span className="absolute inset-0" aria-hidden="true"></span>
                                     </a>
@@ -80,8 +80,8 @@ const Page = () => {
                             <div className="relative flex flex-col overflow-hidden bg-white shadow-md group rounded-2xl">
 
                                 <div className="flex flex-col flex-1 p-6 sm:p-8">
-                                    <p className="flex-1 text-xl font-bold text-gray-900 font-pj">How to choose the right colors when creating a website?</p>
-                                    <p className="text-sm font-normal text-gray-600 font-pj mt-9">March 21, 2021</p>
+                                    <p className="flex-1 text-xl font-bold text-gray-900 font-pj">Nurse Educator</p>
+                                    <p className="text-sm font-normal text-gray-600 font-pj mt-9">2022 - Job Description</p>
                                     <a href="#" title="">
                                         <span className="absolute inset-0" aria-hidden="true"></span>
                                     </a>

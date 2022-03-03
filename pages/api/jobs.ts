@@ -1,3 +1,4 @@
+import { PostgrestFilterBuilder } from "@supabase/postgrest-js";
 import { createClient } from "@supabase/supabase-js";
 import type { NextApiRequest, NextApiResponse } from "next";
 const { v4: uuidv4 } = require("uuid");
@@ -16,6 +17,7 @@ interface Job {
   state: string;
   date_posted: string;
   job_type: string;
+  nurse_type: string;
   hot_job: boolean;
   salary: string;
   urgent_hire: boolean;
@@ -24,6 +26,54 @@ interface Job {
 const supabaseUrl = process.env.NEXT_PUBLIC_API_KEY || "";
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_KEY || "";
 const supabase = createClient(supabaseUrl, supabaseKey);
+
+const buildSearchQuery = (
+  key: string,
+  value: string | string[],
+  query: PostgrestFilterBuilder<any>
+): PostgrestFilterBuilder<any> => {
+  if (value.length && typeof value !== "string") {
+    value = value.join(" or ");
+    query = query.textSearch(key, value, {
+      type: "websearch",
+      config: "English",
+    });
+  } else if (typeof value === "string") {
+    query = query.textSearch(key, value, {
+      type: "plain",
+      config: "English",
+    });
+  }
+
+  return query;
+};
+
+const buildFilterQuery = (
+  value: string,
+  query: PostgrestFilterBuilder<any>
+): PostgrestFilterBuilder<any> => {
+  query = query
+    .like("address", `%${value}%`)
+    .or("")
+    .like("job_title", `%${value}%`);
+  return query;
+};
+
+const buildSortQuery = (
+  value: string,
+  query: PostgrestFilterBuilder<any>
+): PostgrestFilterBuilder<any> => {
+  if (value === "hotJob") {
+    query = query.order("hot_job", {
+      ascending: false,
+    });
+  } else if (value === "datePosted") {
+    query = query.order("date_posted", {
+      ascending: false,
+    });
+  }
+  return query;
+};
 
 // const perPage = 10;
 export default async function handle(
@@ -41,6 +91,7 @@ export default async function handle(
         state,
         salary,
         job_type,
+        nurse_type,
       } = req.body;
 
       const today = new Date();
@@ -52,7 +103,7 @@ export default async function handle(
         date_posted: `${today.getFullYear()}-${
           today.getMonth() + 1
         }-${today.getDate()}`,
-        created_at:new Date().toISOString(),
+        created_at: new Date().toISOString(),
 
         job_title,
         apply_link,
@@ -62,6 +113,7 @@ export default async function handle(
         state,
         salary,
         job_type,
+        nurse_type,
       };
 
       const { data, error } = await supabase
@@ -75,10 +127,57 @@ export default async function handle(
     }
   }
 
-  // @ts-ignore
-  let response = await supabase.from("jobs").select("*");
+  if (req.method === "GET") {
+    const params = Object.entries(req.query);
 
-  console.log("response", response);
+    console.log(params);
+
+    if (params.length) {
+      let query = supabase.from("jobs").select("*", { count: "exact" });
+
+      params.forEach(([key, value]) => {
+        if (key === "search") {
+          query = buildFilterQuery(value as string, query);
+        } else if (key === "sort") {
+          console.log("sort query");
+          query = buildSortQuery(value as string, query);
+        } else if (key === "nurse_type") {
+          query = buildSearchQuery('job_title', value, query);
+        } else query = buildSearchQuery(key, value, query);
+        // if (key === "address") {
+
+        // } else if (value.length && typeof value !== "string") {
+        //   query = query.in(key, [...(value as string[])]);
+        // } else if (typeof value === "string") {
+        //   query = query.eq(key, value);
+        // }
+      });
+
+      const { error, data, count } = await query;
+
+      if (!error) {
+        return res.json({ jobs: data, count: count });
+      } else {
+        return res.status(400).send(error);
+      }
+    } else {
+      const { error, data, count } = await supabase
+        .from("jobs")
+        .select("*", { count: "exact" });
+      if (!error) {
+        return res.json({ jobs: data, count: count });
+      } else {
+        return res.status(400).send(error);
+      }
+    }
+  }
+
+  return res.status(400).send({ error: "No such request" });
+
+  // @ts-ignore
+  // let { data, error, count } = await supabase
+  //   .from("jobs")
+  //   .select("*", { count: "exact" });
 
   // let page: number = 1;
   // let jobTypes: string[] = [];
@@ -100,7 +199,11 @@ export default async function handle(
   //   groupBy = params.groupBy || "";
   // }
 
-  res.json({ jobs: [], count: 0 });
+  // if (!error) {
+  //   res.json({ jobs: data, count: count });
+  // } else {
+  //   res.status(400).send(error);
+  // }
 
   // const skip = (page - 1) * perPage;
 

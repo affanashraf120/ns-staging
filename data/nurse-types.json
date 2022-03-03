@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Registered Nurse Jobs",
+    "slug": "registered-nurse-jobs",
+    "abv": "RN"
+  },
+  {
+    "name": "Assitant In Nursing Jobs",
+    "slug": "assistant-in-nursing-jobs",
+    "abv": "AIN"
+  },
+  {
+    "name": "Clinical Nurse Consultant Jobs",
+    "slug": "clinical-nurse-consultant-jobs",
+    "abv": "CNC"
+  },
+  {
+    "name": "Clinical Nurse Educator Jobs",
+    "slug": "clinical-nurse-educator-jobs",
+    "abv": "CNE"
+  },
+  {
+    "name": "Clinical Nurse Specialist Jobs",
+    "slug": "clinical-nurse-specialist-jobs",
+    "abv": "CNS"
+  },
+  {
+    "name": "Endorsed Enrolled Nurse Jobs",
+    "slug": "endorsed-enrolled-nurse-jobs",
+    "abv": "EEN"
+  },
+  {
+    "name": "Enrolled Nurse Jobs",
+    "slug": "enrolled-nurse-jobs",
+    "abv": "EN"
+  },
+  {
+    "name": "Nurse Educator Jobs",
+    "slug": "nurse-educator-jobs",
+    "abv": "NE"
+  },
+  {
+    "name": "Nurse Manager Jobs",
+    "slug": "nurse-manager-jobs",
+    "abv": "NM"
+  },
+  {
+    "name": "Nurse Unit Manager Jobs",
+    "slug": "nurse-unit-manager-jobs",
+    "abv": "NUM"
+  },
+  {
+    "name": "Nurse Practitioner Jobs",
+    "slug": "nurse-practitioner-jobs",
+    "abv": "NP"
+  }
+]

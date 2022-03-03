@@ -18,8 +18,8 @@ const Jobs = (props: HomePageProps) => {
     // @ts-ignore
     const [loading, setLoading] = useState(false)
     const [currentPage, setCurrentPage] = useState(1)
-    const [jobs, setJobs] = useState(props.jobList)
-    const [jobsCount, setJobsCount] = useState(props.total)
+    const [jobs, setJobs] = useState(props.jobs)
+    const [jobsCount, setJobsCount] = useState(props.count)
     const router = useRouter()
 
     const [jobTypes, setJobTypes] = useState('')
@@ -53,8 +53,8 @@ const Jobs = (props: HomePageProps) => {
     useDidMountEffect(fetchJobs, [currentPage, jobTypes, locations, nurseTypes, sortOption, searchQuery])
 
     useEffect(() => {
-        setJobs(props.jobList)
-        setJobsCount(props.total)
+        setJobs(props.jobs)
+        setJobsCount(props.count)
     }, [props])
 
     const updateCurrentPage = (page: number) => {

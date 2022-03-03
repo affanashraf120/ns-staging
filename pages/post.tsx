@@ -3,7 +3,9 @@ import axios from 'axios'
 import { useRouter } from "next/router"
 import Image from 'next/image'
 import { useForm } from 'react-hook-form'
-import jobTypes from '../data/job-type.json'
+import jobTypes from '../data/job-types.json'
+// import nurseTypes from '../data/nurse-types.json'
+
 
 axios.defaults.headers = {
     // @ts-ignore
@@ -175,6 +177,21 @@ const Post = () => {
                                         </select>
                                     </div>
                                 </div>
+
+                                {/* <div>
+                                    <label htmlFor="job-type" className="font-medium text-gray-900 font-pj">Nurse Type</label>
+                                    <div className="mt-2.5">
+                                        <select {...register(('nurse_type'))}
+                                            required
+                                            className="block w-full py-4 pl-5 pr-12 text-base font-normal text-black placeholder-gray-600 bg-white border border-gray-300 rounded-xl focus:border-black focus:ring-1 focus:ring-black font-pj focus:outline-none"
+                                        >
+                                            <option value="">-- Select an option --</option>
+                                            {nurseTypes.map((e) => (
+                                                <option value={e.slug} key={e.slug}>{e?.abv}</option>
+                                            ))}
+                                        </select>
+                                    </div>
+                                </div> */}
 
                                 <div>
                                     <label htmlFor="salary"

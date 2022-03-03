@@ -1,11 +1,22 @@
+
 const searches = [
-  'Registered Nurse Jobs',
-  'Enrolled Nurse Jobs',
-  'Enrolled Nurse Jobs Melbourne',
-  'Registered Nurse Jobs Adelaide',
-  'Registered Nurse Jobs Sydney',
-  'Enrolled Nurse Jobs Adelaide',
-];
+  {
+    "name": "Employer",
+    "slug": "/jobs/employer",
+  },
+  {
+    "name": "Nurse Type",
+    "slug": "/jobs/nurse-type",
+  },
+  {
+    "name": "Location",
+    "slug": "/jobs/location"
+  },
+  {
+    "name": "Nurse Type Location",
+    "slug": "/jobs/nurse-type-location"
+  },
+]
 
 const RelatedSearches = () => (
   <div>
@@ -13,7 +24,7 @@ const RelatedSearches = () => (
     <div className="grid grid-cols-2 gap-6">
       {searches.map((search, i) => (
         <a
-          href="#"
+          href={search.slug}
           key={i}
           className="flex items-center bg-gray-100 rounded-full py-4 px-6 text-sm"
         >
@@ -27,7 +38,7 @@ const RelatedSearches = () => (
           >
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
           </svg>
-          <span className="ml-4">{search}</span>
+          <span className="ml-4">{search.name}</span>
         </a>
       ))}
     </div>

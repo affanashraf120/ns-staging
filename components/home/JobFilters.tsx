@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
-import companyFilters from '../../data/company.json';
-import locationFilters from '../../data/location-filters.json';
-import nurseTypeAndLocationFilters from '../../data/nurse-type-and-location.json';
-import nurseTypeFilters from '../../data/nurse-type.json';
+import companyFilters from '../../data/employers.json';
+import locationFilters from '../../data/locations.json';
+import nurseTypeAndLocationFilters from '../../data/nurse-type-locations.json';
+import nurseTypeFilters from '../../data/nurse-types.json';
 
 const filterOptions = [
   'Location',
@@ -46,8 +46,8 @@ const JobFilters = () => {
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 text-center lg:text-left gap-6 lg:gap-16 mt-10">
-        {getFilters().map((filter: string, i) => (
-          <a href={`location/${filter.split(' ')[0]}`} className="text-base" key={i}>{filter}</a>
+        {getFilters().map((filter, i) => (
+          <a href={`${filter.slug}`} className="text-base" key={i}>{filter.name}</a>
         ))}
       </div>
     </div>

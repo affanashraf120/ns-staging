@@ -8,7 +8,7 @@ const About = () => {
                 <div className="absolute bottom-0 right-0 overflow-hidden">
                     <img
                         className="w-full h-auto origin-bottom-right transform scale-150 lg:w-auto lg:mx-auto lg:object-cover lg:scale-75"
-                        src="https://cdn.rareblocks.xyz/collection/clarity/images/hero/1/background-pattern.png"
+                        src="public/images/background-pattern.png"
                         alt=""
                     />
                 </div>
@@ -147,7 +147,7 @@ const About = () => {
                             >
                                 <h3>
                                     <button className="flex items-center justify-between w-full px-6 py-5 text-xl font-bold text-left text-gray-900 sm:p-8 font-pj">
-                                        <span> How long do you provide support? </span>
+                                        <span> How many nurse jobs are there on nurse seeking right now? </span>
                                         <span x-show="expanded" aria-hidden="true" className="ml-4">
                                             <svg
                                                 className="w-6 h-6 text-gray-900"
@@ -189,9 +189,7 @@ const About = () => {
 
                                 <div x-show="expanded" x-collapse>
                                     <div className="px-6 pb-6 sm:px-8 sm:pb-8">
-                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                                        do amet sint. Velit officia consequat duis enim velit
-                                        mollit. Exercitation veniam consequat sunt nostrud amet.
+                                      There are thousands of jobs available to search and apply for right now.
                                     </div>
                                 </div>
                             </div>
@@ -213,7 +211,7 @@ const About = () => {
                                     <button className="flex items-center justify-between w-full px-6 py-5 text-xl font-bold text-left text-gray-900 sm:p-8 font-pj">
                                         <span>
                                             {" "}
-                                            Do I need any experience to work with Rareblocks?{" "}
+                                            How can I be the first to find out when there are new nurse jobs on nurse seeking?{" "}
                                         </span>
                                         <span x-show="expanded" aria-hidden="true" className="ml-4">
                                             <svg
@@ -256,9 +254,11 @@ const About = () => {
 
                                 <div x-show="expanded" x-collapse>
                                     <div className="px-6 pb-6 sm:px-8 sm:pb-8">
-                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                                        do amet sint. Velit officia consequat duis enim velit
-                                        mollit. Exercitation veniam consequat sunt nostrud amet.
+                                    New nurse jobs are added every day! 
+                                    We will be launching jobs alerts soon. 
+                                    Signing up for job alerts will help you keep
+                                    up-to-date with the latest nurse opportunities in your inbox today. 
+
                                     </div>
                                 </div>
                             </div>
@@ -278,7 +278,7 @@ const About = () => {
                             >
                                 <h3>
                                     <button className="flex items-center justify-between w-full px-6 py-5 text-xl font-bold text-left text-gray-900 sm:p-8 font-pj">
-                                        <span> What kind of files are included? </span>
+                                        <span> What jobs can I find on nurse seeking?  </span>
                                         <span x-show="expanded" aria-hidden="true" className="ml-4">
                                             <svg
                                                 className="w-6 h-6 text-gray-900"
@@ -320,9 +320,7 @@ const About = () => {
 
                                 <div x-show="expanded" x-collapse>
                                     <div className="px-6 pb-6 sm:px-8 sm:pb-8">
-                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                                        do amet sint. Velit officia consequat duis enim velit
-                                        mollit. Exercitation veniam consequat sunt nostrud amet.
+                                        All the nurse jobs in Australia!
                                     </div>
                                 </div>
                             </div>

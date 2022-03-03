@@ -1,0 +1,306 @@
+[
+  {
+    "name": "Albany Wa Jobs",
+    "slug": "albany-wa-nurse-jobs"
+  },
+  {
+    "name": "Albury Nsw Jobs",
+    "slug": "albury-nsw-nurse-jobs"
+  },
+  {
+    "name": "Adelaide Sa Jobs",
+    "slug": "adelaide-sa-nurse-jobs"
+  },
+  {
+    "name": "Ballarat Victoria Jobs",
+    "slug": "ballarat-victoria-nurse-jobs"
+  },
+  {
+    "name": "Bathurst Nsw Jobs",
+    "slug": "bathurst-nsw-nurse-jobs"
+  },
+  {
+    "name": "Bendigo Victoria Jobs",
+    "slug": "bendigo-victoria-nurse-jobs"
+  },
+  {
+    "name": "Bomaderry Nsw Jobs",
+    "slug": "bomaderry-nsw-nurse-jobs"
+  },
+  {
+    "name": "Boulder Wa Jobs",
+    "slug": "boulder-wa-nurse-jobs"
+  },
+  {
+    "name": "Bowral Nsw Jobs",
+    "slug": "bowral-nsw-nurse-jobs"
+  },
+  {
+    "name": "Brisbane Qld Jobs",
+    "slug": "brisbane-qld-nurse-jobs"
+  },
+  {
+    "name": "Bunbury Wa Jobs",
+    "slug": "bunbury-wa-nurse-jobs"
+  },
+  {
+    "name": "Bundaberg Qld Jobs",
+    "slug": "bundaberg-qld-nurse-jobs"
+  },
+  {
+    "name": "Burnie Tas Jobs",
+    "slug": "burnie-tas-nurse-jobs"
+  },
+  {
+    "name": "Busselton Nsw Jobs",
+    "slug": "busselton-nsw-nurse-jobs"
+  },
+  {
+    "name": "Cairns Qld Jobs",
+    "slug": "cairns-qld-nurse-jobs"
+  },
+  {
+    "name": "Canberra Act Jobs",
+    "slug": "canberra-act-nurse-jobs"
+  },
+  {
+    "name": "Coffs Harbour Nsw Jobs",
+    "slug": "coffs-harbour-nsw-nurse-jobs"
+  },
+  {
+    "name": "Darwin Nt Jobs",
+    "slug": "darwin-nt-nurse-jobs"
+  },
+  {
+    "name": "Devonport Tas Jobs",
+    "slug": "devonport-tas-nurse-jobs"
+  },
+  {
+    "name": "Drouin Vic Jobs",
+    "slug": "drouin-vic-nurse-jobs"
+  },
+  {
+    "name": "Dubbo Nsw Jobs",
+    "slug": "dubbo-nsw-nurse-jobs"
+  },
+  {
+    "name": "Geelong Vic Jobs",
+    "slug": "geelong-vic-nurse-jobs"
+  },
+  {
+    "name": "Geraldton Wa Jobs",
+    "slug": "geraldton-wa-nurse-jobs"
+  },
+  {
+    "name": "Gladstone Qld Jobs",
+    "slug": "gladstone-qld-nurse-jobs"
+  },
+  {
+    "name": "Gold Coast Qld Jobs",
+    "slug": "gold-coast-qld-nurse-jobs"
+  },
+  {
+    "name": "Hobart Tas Jobs",
+    "slug": "hobart-tas-nurse-jobs"
+  },
+  {
+    "name": "Kalgoorlie Wa Jobs",
+    "slug": "kalgoorlie-wa-nurse-jobs"
+  },
+  {
+    "name": "Launceston Tas Jobs",
+    "slug": "launceston-tas-nurse-jobs"
+  },
+  {
+    "name": "Lismore Nsw Jobs",
+    "slug": "lismore-nsw-nurse-jobs"
+  },
+  {
+    "name": "Mackay Qld Jobs",
+    "slug": "mackay-qld-nurse-jobs"
+  },
+  {
+    "name": "Maitland Nsw Jobs",
+    "slug": "maitland-nsw-nurse-jobs"
+  },
+  {
+    "name": "Maryborough Qld Jobs",
+    "slug": "maryborough-qld-nurse-jobs"
+  },
+  {
+    "name": "Melbourne Vic Jobs",
+    "slug": "melbourne-vic-nurse-jobs"
+  },
+  {
+    "name": "Mildura Vic Jobs",
+    "slug": "mildura-vic-nurse-jobs"
+  },
+  {
+    "name": "Mittagong Nsw Jobs",
+    "slug": "mittagong-nsw-nurse-jobs"
+  },
+  {
+    "name": "Mooroopna Vic Jobs",
+    "slug": "mooroopna-vic-nurse-jobs"
+  },
+  {
+    "name": "Morwell Vic Jobs",
+    "slug": "morwell-vic-nurse-jobs"
+  },
+  {
+    "name": "Mount Gambier Sa Jobs",
+    "slug": "mount-gambier-sa-nurse-jobs"
+  },
+  {
+    "name": "Nelson Bay Nsw Jobs",
+    "slug": "nelson-bay-nsw-nurse-jobs"
+  },
+  {
+    "name": "Newcastle Nsw Jobs",
+    "slug": "newcastle-nsw-nurse-jobs"
+  },
+  {
+    "name": "Nowra Nsw Jobs",
+    "slug": "nowra-nsw-nurse-jobs"
+  },
+  {
+    "name": "Orange Nsw Jobs",
+    "slug": "orange-nsw-nurse-jobs"
+  },
+  {
+    "name": "Perth Nsw Jobs",
+    "slug": "perth-nsw-nurse-jobs"
+  },
+  {
+    "name": "Port Macquarie Nsw Jobs",
+    "slug": "port-macquarie-nsw-nurse-jobs"
+  },
+  {
+    "name": "Queanbeyan Nsw Jobs",
+    "slug": "queanbeyan-nsw-nurse-jobs"
+  },
+  {
+    "name": "Rockhampton Qld Jobs",
+    "slug": "rockhampton-qld-nurse-jobs"
+  },
+  {
+    "name": "Sydney Nsw Jobs",
+    "slug": "sydney-nsw-nurse-jobs"
+  },
+  {
+    "name": "Shepparton Vic Jobs",
+    "slug": "shepparton-vic-nurse-jobs"
+  },
+  {
+    "name": "Sunshine Coast Qld Jobs",
+    "slug": "sunshine-coast-qld-nurse-jobs"
+  },
+  {
+    "name": "Tamworth Nsw Jobs",
+    "slug": "tamworth-nsw-nurse-jobs"
+  },
+  {
+    "name": "Tannum Sands Qld Jobs",
+    "slug": "tannum-sands-qld-nurse-jobs"
+  },
+  {
+    "name": "Toowoomba Qld Jobs",
+    "slug": "toowoomba-qld-nurse-jobs"
+  },
+  {
+    "name": "Townsville Qld Jobs",
+    "slug": "townsville-qld-nurse-jobs"
+  },
+  {
+    "name": "Traralgon Vic Jobs",
+    "slug": "traralgon-vic-nurse-jobs"
+  },
+  {
+    "name": "Tweed Heads Nsw Jobs",
+    "slug": "tweed-heads-nsw-nurse-jobs"
+  },
+  {
+    "name": "Wagga Wagga Nsw Jobs",
+    "slug": "wagga-wagga-nsw-nurse-jobs"
+  },
+  {
+    "name": "Warrnambool Vic Jobs",
+    "slug": "warrnambool-vic-nurse-jobs"
+  },
+  {
+    "name": "Wodonga Vic Jobs",
+    "slug": "wodonga-vic-nurse-jobs"
+  },
+  {
+    "name": "Wollongong Nsw Jobs",
+    "slug": "wollongong-nsw-nurse-jobs"
+  },
+  {
+    "name": "Wynyard Tas Jobs",
+    "slug": "wynyard-tas-nurse-jobs"
+  },
+  {
+    "name": "Caboolture Qld Jobs",
+    "slug": "caboolture-qld-nurse-jobs"
+  },
+  {
+    "name": "Campbelltown Nsw Jobs",
+    "slug": "campbelltown-nsw-nurse-jobs"
+  },
+  {
+    "name": "Central Coast Nsw Jobs",
+    "slug": "central-coast-nsw-nurse-jobs"
+  },
+  {
+    "name": "Cranbourne Vic Jobs",
+    "slug": "cranbourne-vic-nurse-jobs"
+  },
+  {
+    "name": "Dandenong Vic Jobs",
+    "slug": "dandenong-vic-nurse-jobs"
+  },
+  {
+    "name": "Frankston Vic Jobs",
+    "slug": "frankston-vic-nurse-jobs"
+  },
+  {
+    "name": "Ipswich Qld Jobs",
+    "slug": "ipswich-qld-nurse-jobs"
+  },
+  {
+    "name": "Joondalup Wa Jobs",
+    "slug": "joondalup-wa-nurse-jobs"
+  },
+  {
+    "name": "Logan Qld Jobs",
+    "slug": "logan-qld-nurse-jobs"
+  },
+  {
+    "name": "Pakenham Vic Jobs",
+    "slug": "pakenham-vic-nurse-jobs"
+  },
+  {
+    "name": "Penrith Nsw Jobs",
+    "slug": "penrith-nsw-nurse-jobs"
+  },
+  {
+    "name": "Rockingham Wa Jobs",
+    "slug": "rockingham-wa-nurse-jobs"
+  },
+  {
+    "name": "Sutherland Shire Nsw Jobs",
+    "slug": "sutherland-shire-nsw-nurse-jobs"
+  },
+  {
+    "name": "Western Sydney Nsw Jobs",
+    "slug": "western-sydney-nsw-nurse-jobs"
+  },
+  {
+    "name": "Mandurah Wa Jobs",
+    "slug": "mandurah-wa-nurse-jobs"
+  },
+  {
+    "name": "Melton Vic Jobs",
+    "slug": "melton-vic-nurse-jobs"
+  }
+]

@@ -5,11 +5,10 @@ export async function getStaticProps() {
 		const result = await fetch(`${process.env.HOST_URL}/api/jobs?sort=hotJob`, {
 			method: 'GET',
 		})
-		const foo: any = await result.json()
-		console.log(foo)
+		const foo = await result.json()
 		return { props: {...foo} }
-	} catch (err) {
-		console.log(err)
+	} catch (e) {
+		console.log(e)
 		return { props: {} }
 	}
 }

@@ -7,7 +7,7 @@ export async function getStaticProps() {
 		})
 		const foo: any = await result.json()
 		console.log(foo)
-		return { props: {} }
+		return { props: {...foo} }
 	} catch (err) {
 		console.log(err)
 		return { props: {} }

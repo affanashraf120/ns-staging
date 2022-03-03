@@ -53,7 +53,7 @@ const Page = (props: Props) => {
             <h4 className="text-3xl font-medium mb-6 mt-20">Nurse Jobs By</h4>
 
             <div className="grid grid-cols-2 lg:grid-cols-4 text-center lg:text-left gap-6 lg:gap-16 mt-10">
-                {props.links.map((e, i) => (
+                {props.links && props.links.map((e, i) => (
                     <a
                         href={`${process.env.HOST_URL}/${e.slug}`}
                         className="text-base"

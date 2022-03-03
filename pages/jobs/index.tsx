@@ -20,8 +20,8 @@ export async function getStaticProps() {
 	}
 }
 
-const Page = (props: HomePageProps) => {
-	console.log(props)
+const Page = (props: any) => {
+	console.log(JSON.parse(props?.data))
 	return (
 		<>
 			<Jobs jobs={props.jobs} count={props.count} />

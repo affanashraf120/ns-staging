@@ -6,10 +6,10 @@ export async function getStaticProps() {
 			method: 'GET',
 		})
 		const foo: any = await result.json()
-		return { props: JSON.stringify({ count: foo.count, jobs: foo.jobs }) }
+		return { props: {} }
 	} catch (err) {
 		console.log(err)
-		return { props: JSON.stringify({ count: 0, jobs: [] }) }
+		return { props: {} }
 	}
 }
 

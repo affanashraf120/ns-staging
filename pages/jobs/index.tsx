@@ -2,10 +2,11 @@ import Jobs from '../../components/Jobs'
 
 export async function getStaticProps() {
 	try {
-		// const result = await fetch(`${process.env.HOST_URL}/api/jobs?sort=hotJob`, {
-		// 	method: 'GET',
-		// })
-		// const foo: any = await result.json()
+		const result = await fetch(`${process.env.HOST_URL}/api/jobs?sort=hotJob`, {
+			method: 'GET',
+		})
+		const foo: any = await result.json()
+		console.log(foo)
 		return { props: {} }
 	} catch (err) {
 		console.log(err)
